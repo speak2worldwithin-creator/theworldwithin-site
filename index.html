@@ -1,65 +1,173 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>The World Within</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The World Within</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #5f6f65;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #e6ece8;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2f3e37;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    section {
+      display: none;
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+    }
+    section.active {
+      display: block;
+    }
+    h2 {
+      color: #5f6f65;
+    }
+    .review {
+      border-left: 4px solid #5f6f65;
+      padding-left: 15px;
+      margin-bottom: 25px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
 
-    <h1>Welcome to The World Within</h1>
-    <p>Your space for reflection, healing, and growth.</p>
+<body>
 
-    <h2>About</h2>
+<header>
+  <h1>The World Within</h1>
+  <p>Your space for reflection, healing, and growth.</p>
+</header>
 
+<nav>
+  <a onclick="showSection('home')">Home</a>
+  <a onclick="showSection('therapist')">Know Your Therapist</a>
+  <a onclick="showSection('stories')">Stories</a>
+</nav>
+
+<section id="home" class="active">
+  <h2>Welcome</h2>
+  <p>
+    “The world ‘within’ us is our compass; we might want to bring awareness to it as we continue navigating.”
+  </p>
+</section>
+
+<section id="therapist">
+  <h2>Know Your Therapist</h2>
+
+  <h3>The Fundamentals</h3>
+  <p>
+    Dr. Swetha Turlapati, Psychotherapist by experiential learning. Masters of Counseling Psychology and a Doctor of Pharmacy (Pharm D) with a postgraduate degree.
+  </p>
+  <p>
+    I am a trained and certified practitioner in mindfulness, narrative, and IMAGO (couple therapy) approaches. I’m informed by trauma in my sessions with clients.
+    Other trainings include queer affirmative counseling practice (QACP), solution-focused brief therapy (SFBT), and Community Mental Health.
+  </p>
+
+  <h3>Therapeutic Relationship</h3>
+  <p>
+    I believe that collaboration and presence are at the core of a therapeutic relationship. Vulnerability, making space for moment-to-moment emotions, and sensitivity toward culture and systemic oppression are integral to my work.
+  </p>
+
+  <h3>My Vitamins</h3>
+  <p>
+    Co-learning spaces are what I look forward to in my journey as a therapist. I integrate client stories with theory, reflection, and supervision.
+    My background as a patient counselor helps me hold awareness of the interaction between physical and mental health.
+  </p>
+
+  <h3>Calling Towards Communities</h3>
+  <p>
+    Community mental health has always been an integral part of my work. I have worked with NGOs, hospitals, schools, colleges, and corporates.
+    Topics include stress management, mental health awareness, women’s mental health, mindful living, anxiety, depression, and medically unexplained symptoms.
+  </p>
+
+  <h3>I Wake Up To</h3>
+  <p>
+    Developing a connection to the client’s inner world — mind and body — brings calmness to my practice.
+    I believe that conversation with oneself leads to one’s authentic, higher self.
+  </p>
+</section>
+
+<section id="stories">
+  <h2>Stories</h2>
+
+  <div class="review">
     <p>
-      The World Within started off as a moment at a PG in Bangalore — trying to
-      understand big words like passion, goals, and long-term plans, in the little
-      time that existed after a data juggling job.
+      I scheduled a session with Swetha at one of the most turbulent times in my life. I cried and laughed with her.
+      Over two years, she helped me understand anxiety, panic, and myself.
+      Therapy, for me, became a space to find tools — not answers — and that made all the difference.
     </p>
+  </div>
 
+  <div class="review">
     <p>
-      The World Within came to pen and paper like any heartbroken person’s next
-      phase of life: “Self-care, understand life, and change the world around you
-      through your experiences.” The intentions were very raw in the initial phase.
-      It reached WordPress and continued with online courses.
+      Dr. Swetha is not just a wonderful psychologist, she is a very good human being.
+      Her therapy helped me understand my thinking patterns and guided me toward healing from anxiety and depression.
     </p>
+  </div>
 
+  <div class="review">
     <p>
-      Later, after years, it learned about formal education and then tried to fit
-      in the psychology of these experiences.
+      She is an extremely patient listener who helps you realise the root cause of what you feel.
+      That clarity itself is powerful.
     </p>
+  </div>
 
+  <div class="review">
     <p>
-      It now defines itself as a safe space that holds stories of grief, pain,
-      trauma, oppression, unexpressed emotions, thoughts about the universe, etc.
+      I never believed therapy could help addiction — until I met Dr. Swetha.
+      The Pause for Perspective is a must-visit space for the modern human.
     </p>
+  </div>
 
+  <div class="review">
     <p>
-      “The World Within,” as the name says, is a large part of us that shows up
-      within our bodies. How can one become present for it? Bring awareness to it?
-      And honor it with gentleness? It is what the space could provide.
+      It felt very comfortable speaking with her. She gave me space, asked relevant questions,
+      and helped me organise my thoughts. Every minute felt worth it.
     </p>
+  </div>
+</section>
 
-    <p>
-      While we continue to live in the world outside as a part of survival, the
-      world within is an intention to integrate one’s lived experiences, stories
-      from the outside, and responses to these — all of it to exist under the roof
-      of therapy.
-    </p>
+<footer>
+  © The World Within
+</footer>
 
-    <p>
-      According to Buddhist teachings, the boundary between the mind and the world
-      is actually thin, porous, and ultimately illusory. The world is not
-      objectively joyful or sad; it produces a corresponding feeling in us.
-      Rather, feelings originate within us, projecting their subjective experience
-      onto the world. The world isn’t inherently joyful or sad; it just is.
-    </p>
+<script>
+  function showSection(id) {
+    document.querySelectorAll("section").forEach(sec => {
+      sec.classList.remove("active");
+    });
+    document.getElementById(id).classList.add("active");
+  }
+</script>
 
-    <p>
-      This relational space is better understood when we find ways to slow down
-      and be in all three — the within, the world, and the interaction of the two.
-    </p>
-
-  </body>
+</body>
 </html>
-
